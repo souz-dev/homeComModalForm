@@ -58,7 +58,7 @@ flex-direction: column;
 .box-btn {
     margin-top: 5rem;
 }
-.btn {
+.new {
     
     height: 80px;
     width: 120px;
@@ -67,7 +67,7 @@ flex-direction: column;
     padding: 10px;
     
 }
-.box-btn a {
+a {
     list-style: none;
     text-decoration: none;
     color: #fff;
