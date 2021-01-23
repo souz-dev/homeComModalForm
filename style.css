@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background: #00adb5 url(assets/wave.svg) no-repeat bottom center;
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main#container{
+   background: #f1f4f1f1 ;
+    width: 900px;
+    min-height: 40vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;  
+    text-align: center;
+    border-radius: 1.125em;
+}
+h1 {
+    font: 1.5rem;
+}
+main#container p {
+    margin-top: 10px;
+    font-size: 1.225rem;
+    font-weight: bold;
+}
+
+
+
+.container-box{
+ background: url(assets/Payment\ Information-rafiki.svg) no-repeat bottom left;
+min-width: 100%;
+min-height: 30vh;
+display: flex;
+text-align: center;
+align-items: center;
+flex-direction: column;
+
+}
+.container-box h2 {
+    margin-top: 1.5rem;
+    background: #00adb5;
+    display: inline-block;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 1px 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+.box-btn {
+    margin-top: 5rem;
+}
+.btn {
+    
+    height: 80px;
+    width: 120px;
+    background: #00adb5;
+    margin-top: 5rem;
+    padding: 10px;
+    
+}
+.box-btn a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5rem;
+    
+}
+
+.modal-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    background: rgba(0,0,0, 0.5);
+    z-index: 5000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    background: #fff;
+    max-width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid #00adb5;
+    box-shadow: 0 0 0 10px #000;
+}
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.mostrar .modal{
+    animation: modal 3s;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+.input {
+    border: none;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 5px;
+}
+
+
+
+/* estilo form modal */
+
+.button {
+    border: none;
+    padding: 5px;
+    background: #00adb5;
+    color: #fff;
+    font-size: 16px;
+}
+
+.fechar {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: #00adb5;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.3) ;
+
+}

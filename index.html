@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <main id="container">
+        <div class="text"> 
+        <h1>Seja bem vindo</h1>
+            <p>Estamos aqui para te ajudar da melhor forma </p>
+        </div>  
+         <div class="container-box">
+          <h2> <span>Inscreva-se para mais   <br> informações </span></h2>
+      
+              <div class="box-btn on">
+                  <a href="" onclick="Modal.open()" class="btn on"> Inscreva-se</a>
+              </div>
+         </div> 
+    </main>
+    <div id="modalID" class="modal-container ">
+        <div class="modal">
+            <button onclick="Modal.close()"class="fechar">X</button>
+            <h3> Se Inscreva</h3>
+            <form action="">
+                <input type="text" name="" class="input"id="E-mail" placeholder="E-mail">
+                <input type="button" class="button" value="cadastrar">
+            </form>
+        </div>
+    </div>
+    <script>
+              const Modal = {
+            open(){
+
+                //Abrir modal
+                //Adicionar classe active ao modal
+               document.querySelector('.modal-container')
+               .classList.add('mostrar')
+
+            },
+            close(){
+                //Fechar modal
+                //Remover class active do modal
+                document.querySelector('.modal-container')
+               .classList.remove('mostrar')
+            }
+        }
+
+     
+    </script>
+</body>
+</html>
